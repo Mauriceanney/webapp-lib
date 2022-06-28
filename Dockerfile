@@ -1,6 +1,7 @@
 FROM ubuntu 
 LABEL maintainer="maurice"
 RUN apt-get update
+RUN apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nginx git
 RUN rm -Rf /var/www/html/*
